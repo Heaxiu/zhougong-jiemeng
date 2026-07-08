@@ -1,0 +1,8 @@
+# 强制 Android / Gradle 相关文件在仓库中保持 LF 换行，避免在 Ubuntu Runner 上构建失败
+*.gradle text eol=lf
+*.properties text eol=lf
+*.xml text eol=lf
+*.java text eol=lf
+*.pro text eol=lf
+*.bat text eol=crlf
+gradlew text eol=lf
