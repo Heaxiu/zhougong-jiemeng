@@ -43,9 +43,6 @@ jobs:
       - name: Grant Gradle execute permission
         run: chmod +x android/gradlew
 
-      - name: Sync Capacitor
-        run: npx cap sync android
-
       - name: Fix Kotlin stdlib duplicate classes
         run: |
           # 在 android/app/build.gradle 添加依赖解析策略，强制统一 kotlin-stdlib 版本
@@ -59,6 +56,9 @@ jobs:
               }
           }
           EOF
+
+      - name: Sync Capacitor
+        run: npx cap sync android
 
       - name: Build Debug APK
         run: |
