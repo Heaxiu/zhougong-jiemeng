@@ -1,0 +1,13 @@
+{
+  "appId": "com.heaxiu.zhougongjiemeng",
+  "appName": "周公解梦",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "buildOptions": {
+      "releaseType": "APK"
+    }
+  }
+}
